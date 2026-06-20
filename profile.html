@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Profile UI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  
+  <div class="app-container">
+    
+    <!-- Desktop Sidebar -->
+    <div class="sidebar">
+      <a href="feed.html" class="logo">Instagram</a>
+      <div class="sidebar-nav">
+        <a href="feed.html" class="sidebar-item">
+          <i class="ph ph-house"></i> Home
+        </a>
+        <a href="explore.html" class="sidebar-item">
+          <i class="ph ph-magnifying-glass"></i> Search
+        </a>
+        <a href="explore.html" class="sidebar-item">
+          <i class="ph ph-compass"></i> Explore
+        </a>
+        <a href="reels.html" class="sidebar-item">
+          <i class="ph ph-film-strip"></i> Reels
+        </a>
+        <a href="messages.html" class="sidebar-item">
+          <i class="ph ph-paper-plane-tilt"></i> Messages
+        </a>
+        <a href="notifications.html" class="sidebar-item">
+          <i class="ph ph-heart"></i> Notifications
+        </a>
+        <a href="#" class="sidebar-item create-btn">
+          <i class="ph ph-plus-square"></i> Create
+        </a>
+        <a href="profile.html" class="sidebar-item" style="font-weight: 700;">
+          <img src="profile-pic.png" class="nav-profile" alt="Profile" style="border: 2px solid var(--text-dark);">
+          Profile
+        </a>
+        <a href="#" class="sidebar-item theme-toggle" style="margin-top: auto;">
+          <i class="ph ph-moon"></i> Theme
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="ph ph-list"></i> More
+        </a>
+      </div>
+    </div>
+
+    <!-- Notch and Status Bar -->
+    <div class="notch"></div>
+    <div class="status-bar">
+      <span>9:41</span>
+      <div style="display: flex; gap: 5px;">
+        <i class="ph-fill ph-cell-signal-full"></i>
+        <i class="ph-fill ph-wifi-high"></i>
+        <i class="ph-fill ph-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+      <div class="title">
+        <i class="ph ph-lock-key"></i>
+        muhammadshahzaib
+        <i class="ph ph-caret-down" style="font-size: 14px;"></i>
+      </div>
+      <div class="icons">
+        <i class="ph ph-plus-square"></i>
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content">
+      
+      <!-- Profile Header -->
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <img src="profile-pic.png" class="inner" alt="Profile Picture">
+          <div class="add-icon"><i class="ph ph-plus"></i></div>
+        </div>
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-value">9</span>
+            <span class="stat-label">posts</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">845</span>
+            <span class="stat-label">followers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">312</span>
+            <span class="stat-label">following</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Info -->
+      <div class="profile-info">
+        <h1>Muhammad Shahzaib</h1>
+        <p>Digital Creator
+Explore the world with me ✨
+linktr.ee/muhammadshahzaib</p>
+      </div>
+
+      <!-- Profile Actions -->
+      <div class="profile-actions">
+        <button class="btn">Edit profile</button>
+        <button class="btn">Share profile</button>
+        <button class="btn btn-icon"><i class="ph ph-user-plus"></i></button>
+      </div>
+
+      <!-- Highlights -->
+      <div class="highlights">
+        <div class="highlight-item">
+          <div class="highlight-ring">
+            <div class="highlight-inner add"><i class="ph ph-plus"></i></div>
+          </div>
+          <span>New</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-ring active" style="background: none; border: 1px solid var(--border-color); padding: 2px;">
+            <img class="highlight-inner" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Highlights">
+          </div>
+          <span>Highlights</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-ring active" style="background: none; border: 1px solid var(--border-color); padding: 2px;">
+            <img class="highlight-inner" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Travel">
+          </div>
+          <span>Travel</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-ring active" style="background: none; border: 1px solid var(--border-color); padding: 2px;">
+            <img class="highlight-inner" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Food">
+          </div>
+          <span>Food</span>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="profile-tabs">
+        <div class="tab active"><i class="ph ph-squares-four"></i></div>
+        <div class="tab"><i class="ph ph-user-square"></i></div>
+      </div>
+
+      <!-- Post Grid -->
+      <div class="grid">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1506744626753-dba7e41dd11f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+        <img class="grid-item" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post">
+      </div>
+      
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <a href="feed.html"><i class="ph ph-house"></i></a>
+      <a href="explore.html"><i class="ph ph-magnifying-glass"></i></a>
+      <a href="#" class="create-btn"><i class="ph ph-plus-square"></i></a>
+      <a href="reels.html"><i class="ph ph-film-strip"></i></a>
+      <a href="profile.html" style="color: var(--text-dark);"><img src="profile-pic.png" class="nav-profile" alt="Profile" style="border: 1px solid var(--text-dark);"></a>
+    </div>
+  </div>
+
+</body>
+</html>

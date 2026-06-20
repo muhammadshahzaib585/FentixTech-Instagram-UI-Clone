@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Explore UI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  
+  <div class="app-container">
+    
+    <!-- Desktop Sidebar -->
+    <div class="sidebar">
+      <a href="feed.html" class="logo">Instagram</a>
+      <div class="sidebar-nav">
+        <a href="feed.html" class="sidebar-item">
+          <i class="ph ph-house"></i> Home
+        </a>
+        <a href="explore.html" class="sidebar-item" style="font-weight: 700;">
+          <i class="ph-fill ph-magnifying-glass"></i> Search
+        </a>
+        <a href="explore.html" class="sidebar-item">
+          <i class="ph ph-compass"></i> Explore
+        </a>
+        <a href="reels.html" class="sidebar-item">
+          <i class="ph ph-film-strip"></i> Reels
+        </a>
+        <a href="messages.html" class="sidebar-item">
+          <i class="ph ph-paper-plane-tilt"></i> Messages
+        </a>
+        <a href="notifications.html" class="sidebar-item">
+          <i class="ph ph-heart"></i> Notifications
+        </a>
+        <a href="#" class="sidebar-item create-btn">
+          <i class="ph ph-plus-square"></i> Create
+        </a>
+        <a href="profile.html" class="sidebar-item">
+          <img src="profile-pic.png" class="nav-profile" alt="Profile">
+          Profile
+        </a>
+        <a href="#" class="sidebar-item theme-toggle" style="margin-top: auto;">
+          <i class="ph ph-moon"></i> Theme
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="ph ph-list"></i> More
+        </a>
+      </div>
+    </div>
+
+    <div class="notch"></div>
+    <div class="status-bar">
+      <span>9:41</span>
+      <div style="display: flex; gap: 5px;">
+        <i class="ph-fill ph-cell-signal-full"></i>
+        <i class="ph-fill ph-wifi-high"></i>
+        <i class="ph-fill ph-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content">
+      
+      <div class="explore-container">
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+          <div class="search-bar">
+            <i class="ph ph-magnifying-glass" style="font-size: 18px;"></i>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+
+        <!-- Explore Tags -->
+        <div class="explore-tags">
+          <div class="explore-tag"><i class="ph-fill ph-monitor-play" style="margin-right: 5px;"></i>IGTV</div>
+          <div class="explore-tag"><i class="ph-fill ph-storefront" style="margin-right: 5px;"></i>Shop</div>
+          <div class="explore-tag">Design</div>
+          <div class="explore-tag">Decor</div>
+          <div class="explore-tag">Architecture</div>
+          <div class="explore-tag">Travel</div>
+        </div>
+
+        <!-- Explore Grid -->
+        <div class="explore-grid">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cat">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1506744626753-dba7e41dd11f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nature">
+          <img class="explore-grid-item large" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="House">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Office">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+          <img class="explore-grid-item large" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Car">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nature">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Architecture">
+          <img class="explore-grid-item" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Interior">
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <div class="bottom-nav">
+      <a href="feed.html"><i class="ph ph-house"></i></a>
+      <a href="explore.html" style="color: var(--text-dark);"><i class="ph-fill ph-magnifying-glass"></i></a>
+      <a href="#" class="create-btn"><i class="ph ph-plus-square"></i></a>
+      <a href="reels.html"><i class="ph ph-film-strip"></i></a>
+      <a href="profile.html"><img src="profile-pic.png" class="nav-profile" alt="Profile"></a>
+    </div>
+  </div>
+
+</body>
+</html>

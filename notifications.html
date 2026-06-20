@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Notifications UI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Desktop Sidebar -->
+    <div class="sidebar">
+      <a href="feed.html" class="logo">Instagram</a>
+      <div class="sidebar-nav">
+        <a href="feed.html" class="sidebar-item">
+          <i class="ph ph-house"></i> Home
+        </a>
+        <a href="explore.html" class="sidebar-item">
+          <i class="ph ph-magnifying-glass"></i> Search
+        </a>
+        <a href="explore.html" class="sidebar-item">
+          <i class="ph ph-compass"></i> Explore
+        </a>
+        <a href="reels.html" class="sidebar-item">
+          <i class="ph ph-film-strip"></i> Reels
+        </a>
+        <a href="messages.html" class="sidebar-item">
+          <i class="ph ph-paper-plane-tilt"></i> Messages
+        </a>
+        <a href="notifications.html" class="sidebar-item" style="font-weight: 700;">
+          <i class="ph-fill ph-heart"></i> Notifications
+        </a>
+        <a href="#" class="sidebar-item create-btn">
+          <i class="ph ph-plus-square"></i> Create
+        </a>
+        <a href="profile.html" class="sidebar-item">
+          <img src="profile-pic.png" class="nav-profile" alt="Profile">
+          Profile
+        </a>
+        <a href="#" class="sidebar-item theme-toggle" style="margin-top: auto;">
+          <i class="ph ph-moon"></i> Theme
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="ph ph-list"></i> More
+        </a>
+      </div>
+    </div>
+
+    <!-- Top Navigation (Mobile) -->
+    <div class="top-nav">
+      <div class="title">
+        Notifications
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="notifications-container">
+        <div class="notif-header">This Month</div>
+        
+        <div class="notif-item">
+          <img class="notif-avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+          <div class="notif-text">
+            <strong>design_inspo</strong> liked your photo. <span class="notif-time">2h</span>
+          </div>
+          <img class="notif-post-thumb" src="https://images.unsplash.com/photo-1506744626753-dba7e41dd11f?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+        </div>
+
+        <div class="notif-item">
+          <img class="notif-avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+          <div class="notif-text">
+            <strong>arch_daily</strong> started following you. <span class="notif-time">5h</span>
+          </div>
+          <button class="notif-action-btn">Following</button>
+        </div>
+
+        <div class="notif-item">
+          <img class="notif-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+          <div class="notif-text">
+            <strong>traveler_99</strong> left a comment: "This is stunning!" <span class="notif-time">1d</span>
+          </div>
+          <img class="notif-post-thumb" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+        </div>
+
+        <div class="notif-header" style="margin-top: 20px;">Earlier</div>
+
+        <div class="notif-item">
+          <img class="notif-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="">
+          <div class="notif-text">
+            <strong>john_doe</strong> started following you. <span class="notif-time">3w</span>
+          </div>
+          <button class="notif-action-btn" style="background: var(--hover-bg); color: var(--text-dark);">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <div class="bottom-nav">
+      <a href="feed.html"><i class="ph ph-house"></i></a>
+      <a href="explore.html"><i class="ph ph-magnifying-glass"></i></a>
+      <a href="#" class="create-btn"><i class="ph ph-plus-square"></i></a>
+      <a href="reels.html"><i class="ph ph-film-strip"></i></a>
+      <a href="profile.html"><img src="profile-pic.png" class="nav-profile" alt=""></a>
+    </div>
+  </div>
+</body>
+</html>
